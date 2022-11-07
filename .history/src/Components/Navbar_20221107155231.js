@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import {BsSearch} from 'react-icons/bs'
-import {FaShoppingCart, FaRegHeart} from 'react-icons/fa'
+import {BsSearch} from 'react-icons/ba'
+import {FaShoppingCart} from 'react-icons/fa'
 import fire from '../Config/Config'
 import './Navbar.css'
 
@@ -22,7 +22,7 @@ export const Navbar = ({user}) => {
          <h4><Link to='/summer'>Summer</Link></h4>
          <h4><Link to='/winter'>Winter</Link></h4>
          <h4><Link to='/accessories'>Accessories</Link></h4>
-         <h4><Link to='/sale'>Sale</Link></h4>
+         <h4><Link to='sale'>Sale</Link></h4>
     </div>
     <div className='rightside'>
         {!user&&<>

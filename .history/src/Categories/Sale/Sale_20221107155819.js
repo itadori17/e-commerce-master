@@ -42,7 +42,7 @@ const Sale = (props) => {
     const user = GetCurrentUser()
   return (
     <>
-    <Navbar user={user} />
+         <Navbar user={user} />
       Sale
     </>
   )

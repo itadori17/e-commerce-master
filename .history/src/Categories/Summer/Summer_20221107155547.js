@@ -1,12 +1,6 @@
-import { Navbar } from '../../Components/Navbar'
-import React, { useState, useEffect } from 'react'
-import fire, { auth, db } from '../../Config/Config'
-import { onAuthStateChanged, } from 'firebase/auth'
-import { useNavigate } from 'react-router-dom';
+import React from 'react'
 
-
-
-const Sale = (props) => {
+function Summer = ()  {
     function GetUserUid() {
         const [uid, setUid] = useState(null);
         useEffect(() => {
@@ -41,11 +35,10 @@ const Sale = (props) => {
     }
     const user = GetCurrentUser()
   return (
-    <>
-    <Navbar user={user} />
-      Sale
-    </>
+    <div>
+      Summer
+    </div>
   )
 }
 
-export default Sale
+export default Summer

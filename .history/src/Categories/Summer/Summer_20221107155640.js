@@ -5,8 +5,7 @@ import { onAuthStateChanged, } from 'firebase/auth'
 import { useNavigate } from 'react-router-dom';
 
 
-
-const Sale = (props) => {
+const Summer = (props) => {
     function GetUserUid() {
         const [uid, setUid] = useState(null);
         useEffect(() => {
@@ -42,10 +41,10 @@ const Sale = (props) => {
     const user = GetCurrentUser()
   return (
     <>
-    <Navbar user={user} />
-      Sale
-    </>
+        <Navbar user={user} />
+      Summer
+    </div>
   )
 }
 
-export default Sale
+export default Summer
