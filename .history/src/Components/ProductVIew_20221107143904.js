@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom';
 import fire, { auth, db } from '../Config/Config'
 import {AiFillStar} from 'react-icons/ai'
-import './product.css'; 
+import
 import _, { size } from 'underscore';
 
 function ProductVIew(individualProduct, ID) {
