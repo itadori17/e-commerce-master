@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 import {FaShoppingCart} from 'react-icons/fa'
 import fire from '../Config/Config'
+import './Navbar.css'
 
 // import{log} from '../image/logo.jpg'
 export const Navbar = ({user}) => {
@@ -13,12 +14,14 @@ export const Navbar = ({user}) => {
         })
     }
   return (
-    <div className='navbar'>Navbar
+    <div className='navbar'>
     <div className='leftside'>
-        <div className='logo'>
-            {/* <img src={logo} ></img> */}
-            <h6>Revelation-Ecommerce</h6>
-        </div>
+         {/* <img src={logo} ></img> */}
+         <h1>Revelation</h1>
+         <h4>Summer</h4>
+         <h4>Winter</h4>
+         <h4>Accessories</h4>
+         <h4>Sale</h4>
     </div>
     <div className='rightside'>
         {!user&&<>
