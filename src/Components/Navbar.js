@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import {FaShoppingCart, FaRegHeart } from 'react-icons/fa'
-import { BsSearch } from 'react-icons/bs'
+
+import {FaShoppingCart} from 'react-icons/fa'
 import fire from '../Config/Config'
 import './Navbar.css'
 
@@ -18,7 +18,6 @@ export const Navbar = ({user}) => {
     <div className='leftside'>
          {/* <img src={logo} ></img> */}
          <h1>Revelation</h1>
-         <h4>Home</h4>
          <h4>Summer</h4>
          <h4>Winter</h4>
          <h4>Accessories</h4>
@@ -30,20 +29,19 @@ export const Navbar = ({user}) => {
         <div><Link className='navlink'to="login">Login</Link></div>
         </>
         }
-        {user&&<>
+{user&&<>
 
-        <div><Link className ="navlink" to='/'>{user}</Link></div>
-        <div className="cart-menu-btn">
-        <Link className ="navlink" to='search'><BsSearch size={20}/></Link>
-        <Link className ="navlink" to='wishlist'><FaRegHeart size={20}/></Link>
-        <Link className ="navlink" to='cart'><FaShoppingCart size={20}/></Link>
-            
-            {/* <span className='cart-indicator'>{totalQty}</span> */}
-    </div>
-    <div className='btn btn-danger btn-md' onClick={handleLogout}>LOGOUT
+<div><Link className ="navlink" to='/'>{user}</Link></div>
+<div className="cart-menu-btn">
+    <Link className ="navlink" to='cart'><FaShoppingCart size={20}/></Link>
+    
+    {/* <span className='cart-indicator'>{totalQty}</span> */}
 
-    </div>
-    </>
+</div>
+<div className='btn btn-danger btn-md' onClick={handleLogout}>LOGOUT
+
+</div>
+</>
 
 }
     </div>
