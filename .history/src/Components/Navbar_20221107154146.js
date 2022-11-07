@@ -22,7 +22,7 @@ export const Navbar = ({user}) => {
          <h4><Link to='/summer'>Summer</Link></h4>
          <h4><Link to='/winter'>Winter</Link></h4>
          <h4><Link to='/accessories'>Accessories</Link></h4>
-         <h4><Link to='sale'>Sale</Link></h4>
+         <h4><Link to>Sale</Link></h4>
     </div>
     <div className='rightside'>
         {!user&&<>

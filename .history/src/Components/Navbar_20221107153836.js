@@ -18,11 +18,11 @@ export const Navbar = ({user}) => {
     <div className='leftside'>
          {/* <img src={logo} ></img> */}
          <h1>Revelation</h1>
-         <h4><Link to='/'>Home</Link></h4>
-         <h4><Link to='/summer'>Summer</Link></h4>
-         <h4><Link to='/winter'>Winter</Link></h4>
-         <h4><Link to='/accessories'>Accessories</Link></h4>
-         <h4><Link to='sale'>Sale</Link></h4>
+         <h4>Home</h4>
+         <h4>Summer</h4>
+         <h4>Winter</h4>
+         <h4>Accessories</h4>
+         <h4>Sale</h4>
     </div>
     <div className='rightside'>
         {!user&&<>
@@ -34,9 +34,9 @@ export const Navbar = ({user}) => {
 
         <div><Link className ="navlink" to='/'>{user}</Link></div>
         <div className="cart-menu-btn">
-        <Link className ="navlink" to='/search'><BsSearch size={20}/></Link>
-        <Link className ="navlink" to='/wishlist'><FaRegHeart size={20}/></Link>
-        <Link className ="navlink" to='/cart'><FaShoppingCart size={20}/></Link>
+        <Link className ="navlink" to='search'><BsSearch size={20}/></Link>
+        <Link className ="navlink" to='wishlist'><FaRegHeart size={20}/></Link>
+        <Link className ="navlink" to='cart'><FaShoppingCart size={20}/></Link>
             
             {/* <span className='cart-indicator'>{totalQty}</span> */}
     </div>

@@ -22,7 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/login" element={<Login/>}/>
-        <Route path ="/signup" element={<Signup/>}/>
+        <Route path ="signup" element={<Signup/>}/>
         <Route path ="/cart" element={<Cart/>}/>
         <Route path = '/add-product' element={<AddProduct/>}/>
         <Route path = '/product-view' element={<ProductVIew/>}/>
@@ -30,7 +30,9 @@ function App() {
         <Route path = '/summer' element={<Summer/>}/>
         <Route path = '/winter' element={<Winter/>}/>
         <Route path = '/accessories' element={<Accessories/>}/>
-        
+        <Route path = '/product-view' element={<ProductVIew/>}/>
+        <Route path = '/product-view' element={<ProductVIew/>}/>
+        <Route path = '/product-view' element={<ProductVIew/>}/>
 
 
     

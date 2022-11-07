@@ -9,10 +9,6 @@ import { NotFound } from './Components/NotFound';
 import { Cart } from './Components/Cart';
 import { AddProduct } from './Components/AddProduct';
 import ProductVIew from './Components/ProductVIew';
-import Sale from './Categories/Sale/Sale';
-import Summer from './Categories/Summer/Summer';
-import Winter from './Categories/Winter/Winter';
-import Accessories from './Categories/Accessories/Accessories';
 
 function App() {
   return (
@@ -22,16 +18,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/login" element={<Login/>}/>
-        <Route path ="/signup" element={<Signup/>}/>
+        <Route path ="signup" element={<Signup/>}/>
         <Route path ="/cart" element={<Cart/>}/>
         <Route path = '/add-product' element={<AddProduct/>}/>
         <Route path = '/product-view' element={<ProductVIew/>}/>
-        <Route path ="/sale" element={<Sale/>}/>
-        <Route path = '/summer' element={<Summer/>}/>
-        <Route path = '/winter' element={<Winter/>}/>
-        <Route path = '/accessories' element={<Accessories/>}/>
-        
-
+        <Route path ="/sale" element={<Sa/>}/>
+        <Route path = '/add-product' element={<AddProduct/>}/>
+        <Route path = '/product-view' element={<ProductVIew/>}/>
 
     
       </Routes>

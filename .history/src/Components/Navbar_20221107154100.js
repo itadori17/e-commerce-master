@@ -18,11 +18,11 @@ export const Navbar = ({user}) => {
     <div className='leftside'>
          {/* <img src={logo} ></img> */}
          <h1>Revelation</h1>
-         <h4><Link to='/'>Home</Link></h4>
-         <h4><Link to='/summer'>Summer</Link></h4>
-         <h4><Link to='/winter'>Winter</Link></h4>
-         <h4><Link to='/accessories'>Accessories</Link></h4>
-         <h4><Link to='sale'>Sale</Link></h4>
+         <h4><Link to=>Home</Link></h4>
+         <h4><Link to>Summer</Link></h4>
+         <h4><Link to>Winter</Link></h4>
+         <h4><Link to>Accessories</Link></h4>
+         <h4><Link to>Sale</Link></h4>
     </div>
     <div className='rightside'>
         {!user&&<>

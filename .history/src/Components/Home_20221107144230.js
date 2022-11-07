@@ -95,13 +95,13 @@ export const Home = (props) => {
             <Hero />
             {products.length > 0 && (
                 <div className='container-fluid'>
-{/*                     
+                    
                     <Grid container spacing={2} marginTop={2} marginLeft={1}  >
                             <Products products={products} helloWorld={helloWorld} />
 
 
 
-                    </Grid> */}
+                    </Grid>
                 </div>
             )}
             {products.length < 1 && (
