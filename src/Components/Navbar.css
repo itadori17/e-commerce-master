@@ -1,6 +1,6 @@
 .navbar{
-    background-color: #fff;
-    color: #000;
+    background-color: #000;
+    color: #fff;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -15,12 +15,4 @@
 
 .leftside h4 {
     margin-left: 50px;
-    font-weight: 500;
-}
-.leftside h4:active {
-    text-decoration: underline;
-    color: #000;
-}
-.navlink{
-    color: black;
 }

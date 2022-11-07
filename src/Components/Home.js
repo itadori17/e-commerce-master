@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import fire, { auth, db } from '../Config/Config'
 import { Navbar } from './Navbar'
 import { Products } from './Products'
-import Hero from './Hero'
 import { onAuthStateChanged, } from 'firebase/auth'
 import { useNavigate } from 'react-router-dom'
 import { CartProduct } from './CartProducts'
@@ -91,7 +90,6 @@ export const Home = (props) => {
     return (
         <>
             <Navbar user={user} />
-            <Hero />
             {products.length > 0 && (
                 <div className='container-fluid'>
                     <h1 className='text-center'>Product</h1>
